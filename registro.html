@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro Estudiantil</title>
+    <title>Registro Estudiantil Universitario</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,34 +17,24 @@
         </ul>
     </nav>
 
-    <!-- Formulario de Registro -->
+    <!-- Contenido Principal -->
     <main>
-        <h2>Registro de Estudiantes</h2>
-        <form id="registroForm">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
+        <h1>Registro de Estudiantes</h1>
 
-            <label for="apellido">Apellido:</label>
-            <input type="text" id="apellido" name="apellido" required>
-
-            <label for="cedula">Cédula:</label>
-            <input type="number" id="cedula" name="cedula" required>
-
-            <label for="matricula">Número de Matrícula:</label>
-            <input type="text" id="matricula" name="matricula" required>
-
-            <label for="correo">Correo Universitario:</label>
-            <input type="email" id="correo" name="correo" required>
-
-            <label for="carrera">Carrera:</label>
-            <input type="text" id="carrera" name="carrera" required>
-
-            <label for="fechaIngreso">Fecha de Ingreso:</label>
-            <input type="date" id="fechaIngreso" name="fechaIngreso" required>
-
-            <label for="telefono">Teléfono:</label>
-            <input type="text" id="telefono" name="telefono" required>
-
+        <!-- Formulario de Registro -->
+        <form id="registerForm">
+            <input type="text" id="name" placeholder="Nombre" required>
+            <input type="text" id="surname" placeholder="Apellido" required>
+            <input type="text" id="id" placeholder="Cédula" required>
+            <input type="email" id="email" placeholder="Correo Electrónico" required>
+            <input type="text" id="phone" placeholder="Teléfono" required>
+            <input type="text" id="address" placeholder="Dirección" required>
+            <input type="date" id="birthdate" placeholder="Fecha de Nacimiento" required>
+            <select id="gender" required>
+                <option value="">Género</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+            </select>
             <button type="submit">Registrar</button>
         </form>
     </main>
@@ -54,6 +44,7 @@
         <p>&copy; 2024 Sistema de Registro Estudiantil Universitario</p>
     </footer>
 
+    <!-- Enlace al archivo JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>
