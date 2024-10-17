@@ -89,11 +89,11 @@ form input[type="text"],
 form input[type="email"],
 form input[type="number"],
 form input[type="date"] {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 10px;
 }
 
 form button {
@@ -139,6 +139,7 @@ table tbody tr:nth-child(even) {
 
     form, table {
         width: 90%;
+        margin: 0 auto; /* Centrar el formulario */
     }
 
     table th, table td {
@@ -150,7 +151,15 @@ table tbody tr:nth-child(even) {
         padding: 10px;
         font-size: 14px;
     }
-}
+
+
+    table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+}   
 
 @media (max-width: 480px) {
     nav ul li {
@@ -159,7 +168,8 @@ table tbody tr:nth-child(even) {
     }
 
     form, table {
-        width: 100%;
+        width: 90%;
+        margin: 0 auto; /* Centrar el formulario */
     }
 
     form label, form input, form button {
